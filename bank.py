@@ -2,7 +2,7 @@
 # author: Joseph Benkanoun
 # prompt user for two cent amounts and print output as a euro value
 
-# had an idea to define euro value by dividing to integer and define cell value as remainder on the basis of arithmetic function learned in Week 2
+# had an idea to define eurovalue by dividing to integer and define centvalue as remainder on the basis of arithmetic function learned in Week 2
 amount1 = int(input("Enter first amount (in c): "))
 amount2 = int(input("Enter second amount (in c): "))
 total = (amount1 + amount2)
