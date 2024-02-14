@@ -9,4 +9,4 @@ total = (amount1 + amount2)
 eurovalue = total//100
 print (f"The sum of these is €{eurovalue}.{str(total)[-2:]}")
 
-# works broadly but doesn't work for total values under >100 so will need to determine a solution for those
+# works broadly but doesn't work for total values under >10 so will need to determine a solution for those
