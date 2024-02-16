@@ -15,4 +15,4 @@ while num != 1: # sequence will stop once it reaches 1
         num = (num*3)+1 # multiply number by 3 and then add 1 - this is the next number
         sequence.append(num) # append next number to list
 
-print(sequence[0:]) # when While clause ends (number reaches 1), print entire list
+print(sequence[0:]) # when While loop ends (number reaches 1), print entire list
