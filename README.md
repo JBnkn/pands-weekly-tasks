@@ -12,4 +12,4 @@ Used an IF function to account for anomaly which runs when total is < 10
 # accounts.py
 Defined input as a string, spliced last four characters, and printed output as XXXXXX{digits}
 Will try to code it to deal with account numbers of any length - achieved
-As a separate task, will attempt to add an error message if account number of wrong length is input - working on it
+As a separate task, will attempt to add an error message if account number of wrong length is input - achieved with WHILE loop
