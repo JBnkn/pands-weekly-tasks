@@ -9,8 +9,9 @@ gap = num - test
 
 while gap > 0.1:
     print(f"Your number is {num}, {sq} squared is {test}: the gap is now {gap}")
-    sq += 0.1
-    test = sq*sq
+    root = 0.5 * (sq + (num / sq))
+    test = root * root
     gap = num - test
+    sq += 0.1
 
 print(f"The square root of {num} is {sq} with a tolerance of {gap}.")
