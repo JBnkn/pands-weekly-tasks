@@ -23,7 +23,7 @@ Write a program that prompts the user to enter a positive floating-point number 
 ## Week 07 - [textfile.py](https://github.com/JBnkn/pands-weekly-tasks/blob/main/textfile.py)
 Write a program that reads in a text file and outputs how many times it contains the letter **e**. 
 
-## Week 08 - plottask.py
+## Week 08 - [plottask.py](https://github.com/JBnkn/pands-weekly-tasks/blob/main/plottask.py)
 Write a program that displays:
 - a histogram of a normal distribution of 1000 values with a mean of 5 and standard deviation of 2, and
 - a plot of the function *h(x)=x3* in the range 0 to 10
