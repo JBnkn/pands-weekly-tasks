@@ -1,5 +1,5 @@
 # pands Weekly Tasks
-A repository to store the Weekly Tasks for the Programming and Scripting module as part of the [Higher Diploma in Science in Data Analytics at ATU](https://www.gmit.ie/higher-diploma-in-science-in-computing-in-data-analytics).
+A repository to store the Weekly Tasks for the [Programming and Scripting](https://www.gmit.ie/programming-and-scripting) module as part of the [Higher Diploma in Science in Data Analytics at ATU](https://www.gmit.ie/higher-diploma-in-science-in-computing-in-data-analytics).
 
 ## Week 01 - [helloworld.py](https://github.com/JBnkn/pands-weekly-tasks/blob/main/helloworld.py)
 Write a program that prints **"Hello World!"** to the console when it is run.
