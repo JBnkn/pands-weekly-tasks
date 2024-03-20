@@ -2,12 +2,22 @@
 # author: Joseph Benkanoun
 # prompt user for two cent amounts and print output as a euro value
 
-# included an if function to account for anomolies when total was less than 10
+# included an IF function to account for anomolies when total was less than 10
 # was familiar with Excel before taking the course so had an understanding of IF functions, Googled how they applied within Python
+# https://www.w3schools.com/python/python_conditions.asp
+
+# take in both values and generate total
 amount1 = int(input("Enter first amount (in c): "))
 amount2 = int(input("Enter second amount (in c): "))
 total = (amount1 + amount2)
+
+# determine euro value by using integer division
 eurovalue = total//100
+
+# determine cent value by taking last two characters from total
+# pair euro value and cent value in relative positions
+# IF function accounts for total values under 10
+# ELSE function accounts for all other values
 if total < 10:
     print (f"The sum of these is €{eurovalue}.0{str(total)[-2:]}")
 else:
