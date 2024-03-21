@@ -4,6 +4,10 @@
 # program should take the filename from an argument on the command line
 
 # prompt user to enter a filename (I have created sample.txt in the folder for demo purposes)
+
+## TRY THESE
+## https://askubuntu.com/questions/1059579/input-the-filename-in-the-commandline-as-an-argument-in-python
+## https://www.youtube.com/watch?v=ZQ9JO0e9468
 FILENAME = str(input("Please enter a filename (txt format only): "))
 
 # set an empty dict to capture the counts
