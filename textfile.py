@@ -3,12 +3,14 @@
 # read in a text file and output the number of e's it contains
 # program should take the filename from an argument on the command line
 
-# prompt user to enter a filename (I have created sample.txt in the folder for demo purposes)
+# importing sys module to read filename into command line as an argument
+# was discussed in Week09 Errors lecture
+# reviewed documentation at https://docs.python.org/3/library/sys.html#sys.argv
+# also looked at https://www.youtube.com/watch?v=ZQ9JO0e9468
+import sys
 
-## TRY THESE
-## https://askubuntu.com/questions/1059579/input-the-filename-in-the-commandline-as-an-argument-in-python
-## https://www.youtube.com/watch?v=ZQ9JO0e9468
-FILENAME = str(input("Please enter a filename (txt format only): "))
+# taking filename as argument, I have set up sample.txt in the folder
+FILENAME = sys.argv[1]
 
 # set an empty dict to capture the counts
 counts = {}
