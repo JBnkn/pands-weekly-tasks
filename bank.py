@@ -2,14 +2,26 @@
 # author: Joseph Benkanoun
 # prompt user for two cent amounts and print output as a euro value
 
-# included an IF function to account for anomolies when total was less than 10
-# was familiar with Excel before taking the course so had an understanding of IF functions, Googled how they applied within Python
-# https://www.w3schools.com/python/python_conditions.asp
+# using a while loop to catch exceptions if non-numeric characters are entered
+# want the user to be continually prompted until they enter a number
+# reviewed at https://www.reddit.com/r/learnpython/comments/ln40vj/how_to_make_a_tryexcept_statement_loop_until_true/
+def input_num(prompt):
+    while True:
+        response = input(prompt)
+        try:
+            response = int(response)
+            return response
+        except:
+            print("That wasn't a valid entry. Please enter a whole number value only.")
 
-# take in both values and generate total
-amount1 = int(input("Enter first amount (in c): "))
-amount2 = int(input("Enter second amount (in c): "))
-total = (amount1 + amount2)
+# used existing input_num function to prompt for two values separately
+def input_total():
+    first_number = input_num("Enter first amount (in c): ")
+    second_number = input_num("EEnter second amount (in c): ")
+    # returm total of two values
+    return first_number + second_number
+
+total = input_total()
 
 # determine euro value by using integer division
 eurovalue = total//100
@@ -24,3 +36,6 @@ else:
     print (f"The sum of these is €{eurovalue}.{str(total)[-2:]}")
 
 # this now seems to work as required whether value is €0.0x, €0.xx, €x.xx, or beyond
+    
+# was familiar with Excel before taking the course so had an understanding of IF functions, Googled how they applied within Python
+# https://www.w3schools.com/python/python_conditions.asp

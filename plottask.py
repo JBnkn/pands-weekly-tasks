@@ -5,6 +5,9 @@
 # a plot of the function h(x)=x3 in the range 0 to 10
 # on the one set of axes.
 
+# TBD - look here for two different scales
+# https://matplotlib.org/stable/gallery/subplots_axes_and_figures/two_scales.html
+
 # import numpy for distribution generation
 # import matplotlib for plotting
 import numpy as np
@@ -34,5 +37,6 @@ plt.xlabel('x')
 plt.ylabel('h(x)')
 plt.title('Plot of h(x) = x^3')
 plt.grid(True)
-plt.legend()
+plt.legend(['h(x)=x3'])
+plt.xlim([0, 10])
 plt.show()
