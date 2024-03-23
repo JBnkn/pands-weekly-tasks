@@ -2,8 +2,20 @@
 # author: Joseph Benkanoun
 # take a positive floating-point number as input and output an approximation of its square root
 
-# prompt a user input and clean it to ensure it's a positive floating-point
-num = abs(float(input("Enter a number: ")))
+# trying out a while loop to catch exceptions if non-numeric characters are entered
+# want the user to be continually prompted until they enter a number
+# reviewed at https://www.reddit.com/r/learnpython/comments/ln40vj/how_to_make_a_tryexcept_statement_loop_until_true/
+def input_num():
+    while True:
+        response = input("Enter a number: ")
+        try:
+            response = float(response)
+            return response
+        except:
+            print("That wasn't a number.")
+
+# assign returned response to num
+num = input_num()
 
 # outline initial guess by dividing input by two
 guess = num / 2
