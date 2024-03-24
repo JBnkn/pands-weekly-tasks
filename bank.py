@@ -17,7 +17,7 @@ def input_num(prompt):
 # used existing input_num function to prompt for two values separately
 def input_total():
     first_number = input_num("Enter first amount (in c): ")
-    second_number = input_num("EEnter second amount (in c): ")
+    second_number = input_num("Enter second amount (in c): ")
     # returm total of two values
     return first_number + second_number
 

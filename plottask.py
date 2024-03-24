@@ -26,10 +26,11 @@ def h(x):
     return x**3
 
 # generate x values and use them to generate y values
-# generate 500 points in the range 0 to 10 to create the plot
+# generate 300 points in the range 0 to 10 to create the plot
 # documentation at https://numpy.org/doc/stable/reference/generated/numpy.linspace.html
 x_values = np.linspace(0, 10, 300) 
 y_values = h(x_values)
+
 
 # generate the plot
 plt.plot(x_values, y_values, label='$h(x) = x^3$')
