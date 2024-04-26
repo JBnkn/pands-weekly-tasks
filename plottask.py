@@ -5,15 +5,15 @@
 # a plot of the function h(x)=x3 in the range 0 to 10
 # on the one set of axes.
 
-# TBD - look here for two different scales
-# https://matplotlib.org/stable/gallery/subplots_axes_and_figures/two_scales.html
-
 # import numpy for distribution generation
 # import matplotlib for plotting
+# import seaborn and set default theme as I think it looks nice
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set()
 
-# including a clear function at the start to clear existing plot each time I iterate over the code
+# including a clear function at the start to clear the existing plot each time I iterate over the code
 plt.clf()
 
 # define the histogram using normal distribution
@@ -31,12 +31,11 @@ def h(x):
 x_values = np.linspace(0, 10, 300) 
 y_values = h(x_values)
 
-
 # generate the plot
 plt.plot(x_values, y_values, label='$h(x) = x^3$')
 plt.xlabel('x')
-plt.ylabel('h(x)')
-plt.title('Plot of h(x) = x^3')
+plt.ylabel('y')
+plt.title('Histogram distribution (mean 5, std 2) \nand Plot of h(x) = x^3')
 plt.grid(True)
 plt.legend(['h(x)=x3'])
 plt.xlim([0, 10])
